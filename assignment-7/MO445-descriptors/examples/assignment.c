@@ -55,7 +55,7 @@ void quickSort(struct S_features arr, int low, int high) {
 
 int main(int argc,char **argv){
 	
-	int size, i = 0, j, fixedlen = 1400, len_result = 20;
+	int size, i = 0, j, fixedlen = 1400;
 
 	/* Estrutura para ler todas as imagens do diretorio imgs/ */
 	char dir_name[1024] = "/home/vinicius/Área de Trabalho/mpeg7_conv/";
@@ -151,7 +151,7 @@ int main(int argc,char **argv){
 	printf("Segment Saliences\n");
 	for(i = 0; i < size; i++){
 		fprintf(fp,"1 %s", sfeatures_ss[i].name_query);
-		for(j = 0; j < len_result; j++){
+		for(j = 0; j < size; j++){
 			fprintf(fp," %s", sfeatures_ss[i].result_names[j]);
 		}
 		fprintf(fp,"\n");
@@ -160,7 +160,7 @@ int main(int argc,char **argv){
 	printf("Multiscale Fractal Dimension\n");
 	for(i = 0; i < size; i++){
 		fprintf(fp,"2 %s", sfeatures_mfd[i].name_query);
-		for(j = 0; j < len_result; j++){
+		for(j = 0; j < size; j++){
 			fprintf(fp," %s", sfeatures_mfd[i].result_names[j]);
 		}
 		fprintf(fp,"\n");
