@@ -7,9 +7,9 @@ Students:
 
 # Files
 
- - GIF_to_PGM .py - Convert the image collection in GIF format to PGM format
- - Metrics .py - Calculates the Precision vs Recall and plot the graphic
- - Results .cvs - Ordered results of distance query of each image for both measures 
+ - assignment/convert.py - Convert the image collection in GIF format to PGM format
+ - assignment/metrics.py - Calculates the Precision vs Recall and plot the graphic
+ - assignment/assignment.c - Extract feature vector for all PGM images, calculate the function distances and generate results.csv with the ordered results of distance query of each image for both measures
 
 ## Run
 
@@ -20,7 +20,3 @@ Students:
 	Generate **results.csv** with all images names closeded of each query (image).
 -	To generate the Precision vs Recall graphic, run:
 **python metrics.py** 
-	-	Changing the paths of the variables:
-			-	source_path
-			-	path_images
-			-	output_path
