@@ -20,3 +20,6 @@ Students:
 	Generate **results.csv** with all images names closeded of each query (image).
 -	To generate the Precision vs Recall graphic, run:
 **python metrics.py** 
+
+	- OUTPUT:
+	Generate **precision_vs_recall.png** with the graphics of precision versus recall for the average of all querys.
