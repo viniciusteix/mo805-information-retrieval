@@ -9,7 +9,7 @@ Students:
 
  - assignment/convert.py - Convert the image collection in GIF format to PGM format
  - assignment/metrics.py - Calculates the Precision vs Recall and plot the graphic
- - assignment/assignment.c - Extract feature vector for all PGM images, calculate the function distances and generate results.csv with the ordered results of distance query of each image for both measures
+ - assignment/assignment.c - Extract feature vectors for all PGM images, calculate the function distances and generate results.csv with the ordered results of distance query of each image for both measures
 
 ## Run
 
