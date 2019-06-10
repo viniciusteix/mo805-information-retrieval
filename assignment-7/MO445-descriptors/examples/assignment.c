@@ -58,7 +58,7 @@ int main(int argc,char **argv){
 	int size, i = 0, j, fixedlen = 1400;
 
 	/* Estrutura para ler todas as imagens do diretorio imgs/ */
-	char dir_name[1024] = "/home/vinicius/Área de Trabalho/mpeg7_conv/";
+	char dir_name[1024] = "../mpeg7_new/";
 	// char dir_name[1024] = "/home/vinicius/Dropbox/Mestrado - IC-UNICAMP/1st Semester/Information Retrieval/assignment 07/MO445-descriptors/examples/imgs/";
 	DIR *d;
 	struct dirent *dir;
