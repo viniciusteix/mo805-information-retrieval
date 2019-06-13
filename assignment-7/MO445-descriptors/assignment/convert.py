@@ -1,4 +1,3 @@
-get_ipython().run_line_magic('matplotlib', 'inline')
 import numpy as np
 import matplotlib.pylab as ply
 import os
@@ -19,7 +18,7 @@ def getImagesFromUrl(main_folder, folder, pasta):
                     labels_images.append(main_folder + folder + file)
 
 
-def conversion(source_path, output_path):
+def conversion(source_path, output_path,str_size):
     for img_path in labels_images:
         img = ply.imread(img_path)
         try:
@@ -27,7 +26,7 @@ def conversion(source_path, output_path):
         except:
             None;
         img = np.ceil(img/255)
-        filename = source_path+output_path+img_path[41:-4]+'.pgm'
+        filename = source_path+output_path+img_path[str_size:-4]+'.pgm'
         fout=open(filename, 'wb')
         # define PGM Header
         pgmHeader = 'P2' + '\n' + str(img.shape[1]) + ' ' + str(img.shape[0]) + '\n' + str(1) +  '\n'
@@ -47,12 +46,13 @@ def conversion(source_path, output_path):
 
 
 def main():
-    source_path = "Path_Workspace/"
+    source_path = "/home/vinicius/Área de Trabalho/"
     path_images = "mpeg7/"
     output_path = "mpeg_new/"
+    str_size = len(source_path+path_images)
 
     getImagesFromUrl(source_path, path_images, "")
-    conversion(source_path,output_path)
+    conversion(source_path,output_path,str_size)
 
 if __name__ == '__main__':
     main()
